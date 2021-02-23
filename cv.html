@@ -2,199 +2,269 @@
 <html lang="en">
 
 <head>
+    <title>Bootstrap Theme Simply Me</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <title>The HTML5 Herald</title>
-    <meta name="description" content="The HTML5 Herald">
-    <meta name="author" content="SitePoint">
+    <style>
+        .bg-1 {
+            background-color: #054f74;
+            color: #ffffff;
+        }
 
-    <link rel="stylesheet" href="style.css?v=1.0">
+        .bg-2 {
+            background-color: #436f97;
+            color: #ffffff;
+        }
 
+        .bg-3 {
+            background-color: #054f74;
+            color: #ffffff;
+        }
+
+        .bg-4 {
+            background-color: #436f97;
+            color: #ffffff;
+        }
+
+        .container-fluid {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        ol li a {
+            color: #edd5a5;
+        }
+
+        h4 {
+            color: #edd5a5;
+            font-style: italic;
+        }
+    </style>
 </head>
 
 <body>
-    <div id="name">
-        <h3>Cheng Fu</h3>
-        <div id="contact">
-            <p>Department of Geography, University of Zurich, 8057 Zurich, Switzerland</p>
-            <p>cheng.fu at geo.uzh.ch</p>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Cheng Fu</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#publications">Publication</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#teaching">Teaching</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid bg-1">
+        <div class="row">
+            <div class="col-sm-4 text-center">
+                <img src="/img/me.png" class="img-circle" alt="me" id='me-img'>
+            </div>
+            <div class="col-sm-6">
+                <h3>Computational Place and Behavioral Modeling at the Individual and Society Level</h3>
+                <p>
+                    Cheng Fu is a Lecturer and Senior Researcher (Oberassistent in German)
+                    in the Department of Geography, University of Zurich (UZH), Switzerland.
+                    Previously, he was Postdoctoral Researcher in the same department.
+                </p>
+                <p>
+                    Cheng received his Ph.D. in Geography from the Department of Geographical Sciences,
+                    University of Maryland (UMD), USA in 2018. Before that, he received his M.A. in Geography
+                    from Binghamton University (BU), NY, USA and
+                    B.S. in Remote Sensing and GIS from Peking University (PKU), Beijing, China.
+                </p>
+
+                <h4>Research interests</h4>
+                <ul>
+                    <li>Data mining and data modeling on human-behavior-related Big Data</li>
+                    <li>Urban place modeling
+                    <li>Mobility and health
+                    <li>Geographical information retrieval and visualization
+                    <li>Understanding urban geography from human behavior</li>
+                </ul>
+            </div>
         </div>
     </div>
-    <div>
-        <h4 class="subtitle">Educational Background</h4>
-        <ul>
-            <li>Ph.D. student in the Department of Geographical Sciences, University of Maryland, USA. 2012.8-2018.5
+
+    <div class="container-fluid bg-2" id="publications">
+        <h4>Journal articles</h4>
+        <ol>
+            <li>Fu, C., Huang, H.S., and Weibel, R. (2020). <a
+                    href="https://doi.org/10.1080/13658816.2020.1778003">Adaptive Simplification of GPS. Trajectories
+                    with Geographic Context.</a> International Journal of Geographical Information Science. 1-28. DOI:
+                https://doi.org/10.1080/13658816.2020.1778003</li>
+
+            <li>Fu, C., Song, X-P, and Stewart, K. (2019). <a href="https://doi.org/10.3390/rs11242965">Integrating
+                    Activity-Based Geographic Information and Long-Term Remote Sensing to Characterize Urban Land Use
+                    Change.</a> Remote Sensing. 11(24), 2965. DOI: https://doi.org/10.3390/rs11242965</li>
+            <li>Nasri, A., Zhang, L., Fan, J.C., Stewart, K., Younes, H., Fu, C., and Jessberger S. (2019). <a
+                    href="https://doi.org/10.1177/0361198119850790">Advanced Vehicle Miles Traveled Estimation Methods
+                    for Non-federal Aid System Roadways using GPS Vehicle Trajectory Data and Statistical Power
+                    Analysis.</a> Transportation Research Record. 2673(11). 296-308. DOI:
+                https://doi.org/10.1177/0361198119850790</li>
+            <li>Fan, J.C., Fu, C., Stewart, K., and Zhang, L. (2019). <a
+                    href="https://doi.org/10.1016/j.trc.2019.04.019">Using Big GPS Trajectory Data Analytics for Vehicle
+                    Miles Traveled Estimation.</a> Transportation Research Part C: Emerging Technologies. 103. 298-307.
+                DOI: https://doi.org/10.1016/j.trc.2019.04.019</li>
+            <li>Fu, C., McKenzie, G., Frias-Martinez, V., and Stewart, K. (2018). <a
+                    href="https://doi.org/10.1016/j.compenvurbsys.2018.07.003">Identifying Spatiotemporal Urban
+                    Activities through Linguistic Signatures.</a> Computers, Environment, and Urban Systems. 72. 25-37.
+                DOI: https://doi.org/10.1016/j.compenvurbsys.2018.07.003</li>
+            <li>Hong, L., Fu, C., Wu, J., and Frias-Martinez, V. (2018). <a
+                    href="https://doi.org/10.1145/3091478.3091502">Insights from Online Communications for Local
+                    Government Managing Disaster Relief: the Case of Snowstorms. Information Systems Frontiers.</a>
+                30(4). 387-396. DOI: https://doi.org/10.1145/3091478.3091502</li>
+            <li>Mishra, S., Welch, T., Torrens, P., Fu, C., Zhu, H., and Knaap, E. (2015). <a
+                    href="https://doi.org/10.1007/s12469-014-0091-2">A tool for measuring and visualizing connectivity
+                    of transit stop, route and transfer center in a multimodal transportation network.</a> Public
+                Transport. 7(1). 77-99. DOI: https://doi.org/10.1007/s12469-014-0091-2</li>
+            <li>Zheng, L., Li, M., Wu, C., Ye, H., Ji R., Deng X., Che Y., Fu, C., and Guo, W. (2011). <a
+                    href="https://doi.org/10.1016/j.mcm.2010.11.053">Development of a Smart Mobile Farming Service
+                    System.</a> Mathematical and Computer Modelling 54 (3), 1194-1203. DOI:
+                https://doi.org/10.1016/j.mcm.2010.11.053</li>
+            <li>Wu, C., Fu, C., Su, H., Zheng, L., Ji, R., and Hu, Y., (2009). GPS-Collection Technology for Agriculture
+                Mobile Management. Transactions of the Chinese Society for Agricultural Machinery, 2009, 40(Z1):169-172.
+                In Chinese with English abstract.</li>
+            <li>Tang, A., Wu, C., Zheng, L., Ji, R., Chen, X., and Fu, C. (2009). 农业移动终端无线传输技术. (Wireless
+                Telecommunication Technology for Agriculture Applications). Transactions of the Chinese Society of
+                Agricultural Machinery S1, 244-247. In Chinese.</li>
+        </ol>
+        <h4>Peer-reviewed conference papers</h4>
+        <ol>
+            <li>Fu, C. and Weibel, R. (2019). <a href="https://doi.org/10.34726/lbs2019">Cross-scale Spatial Enrichment
+                    of Trajectories for Speeding Up Similarity Computing.</a> Adjunct Proceedings of the 15th
+                International Conference on Location Based Services. DOI: https://doi.org/10.34726/lbs2019</li>
+            <li>Hong, L., Fu, C., Torrens, P., and Frias-Martinez, V. (2017). <a
+                    href="https://doi.org/10.1145/3091478.3091502">Understanding Citizens’ and Local Governments’
+                    Digital Communications during Natural Disasters: The case of Snowstorms.</a> The 9th International
+                ACM. Web Science Conference 2017. June 26-28, 2017. DOI: https://doi.org/10.1145/3091478.3091502</li>
+            <li>Fu, C., Samet, H., and Sankaranarayanan, J. (2014). <a
+                    href="https://doi.org/10.1145/2755492.2755499">WeiboStand: Capturing Chinese Breaking News Using
+                    Weibo “Tweets”.</a> ACM SIGSPATIAL LBSN’14, November 04-07, 2014, Dallas/Fort Worth, TX, USA. DOI:
+                https://doi.org/10.1145/2755492.2755499</li>
+        </ol>
+        <h4>Book chapters</h4>
+        <ol>
+            <li>Contributor to Chapter 2, Chapter 4, and Appendix 4 of Brunner, H-P (Apr. 2016). Innovation Networks and
+                the New Asian Regionalism: A Knowledge Platform on Economic Productivity. Co-published by Asian
+                Development Bank, Philippines & Edward Elgar Publishing, Cheltenham, U.K. & Northampton, MA, U.S.A.</li>
+        </ol>
+        <h4>Preprint</h4>
+        <ol>
+            <li>Fu, C. and Weibel, R., <a href="https://arxiv.org/abs/2011.00261v2">Towards Measuring Place Function
+                    Similarity at Fine Spatial Granularity with Trajectory Embedding.</a>
+                https://arxiv.org/abs/2011.00261v2. </li>
+        </ol>
+        <h4>Presentations & posters</h4>
+        <ol>
+            <li>2021.2 HERE Technologies "Computational Place and Behavior Modeling Using Socially Sensed Data"</li>
+            <li>2020.12 International Graduate Workshop on GeoInformatics 2020 “Towards Measuring Place Function
+                Similarity at Fine Spatial Granularity with Trajectory Embedding”</li>
+            <li>2019.12 AGU 2019 “Computing the 1-Minute Diffuse Component of Solar Irradiance Using Deep Learning”
+                (poster)</li>
+            <li>2019.11 LBS’2019 “Cross-scale Spatial Enrichment of Trajectories for Speeding Up Similarity Computing”
             </li>
-            <ul>
-                <li>Dissertation: Modeling the Impact of Urban Land Use on Human Activity</li>
-            </ul>
-            <li>M.A. Geography, State University of New York at Binghamton, USA. 2010.9-2012.5</li>
-            <ul>
-                <li>Thesis: Characterize Geo-Social Properties of an Online Social Network</li>
-            </ul>
-            <li>B.S. Remote Sensing and GIS, Peking University, China. 2006.9-2010.7</li>
-            <ul>
-                <li>Thesis: PDA-Based Mobile Monitoring Technology Research</li>
-            </ul>
-        </ul>
-    </div>
-    <div>
-        <h4 class="subtitle">Research Interest</h4>
-        <ul>
-            <li>Data mining and data modeling on human behavior related Big Data</li>
-            <li>Cross-scale analytics</li>
-            <li>Geographical information retrieval and visualization</li>
-            <li>Land use-Human behavior modeling</li>
-        </ul>
-    </div>
-    <div>
-        <h4 class="subtitle">Work Experience</h4>
-        <ul>
-            <li>Oberassitent (equ. Senior Researcher and Lecturer), University of Zurich, 2020.10 - present</li>
-            <li>Postdoctoral Fellow, Dept. of Geography, University of Zurich, 2018.7-2020.9</li>
-            <li>Teaching Assistant and Graduate Assistant, Dept. of Geographical Sciences, University of Maryland,
-                2016.2-2018.5</li>
-            <li>Teacher of “Object-oriented programming for GIS”, Dept. of Geographical Sciences, University of
-                Maryland, 2016.1-2016.5</li>
-            <li>Teacher of “Big Data Analysis on Python”, Dept. of Geographical Sciences, University of Maryland, 2016.1
-            </li>
-            <li>Teaching Assistant and Graduate Assistant, Dept. of Geographical Sciences, University of Maryland,
-                2015.9-2015.12</li>
-            <li>Graduate Research Assistant, Dept. of Geographical Sciences, University of Maryland, 2012.8-2015.5</li>
-            <li>Technology Assistant Consultant, Office of Regional Economic Integration, Asian Development Bank,
-                2014.10-2015.3</li>
-            <li>Intern Consultant, Office of Regional Economic Integration, Asian Development Bank, 2014.6-2014.8</li>
-            <li>Graduate Assistant of the Vice Dean of Graduate School, SUNY-Binghamton, 2012.2-2012.5</li>
-            <li>Internship of Software Engineer, the Geomatics Center of Zhejiang, Zhejiang Institute of Survey and
-                Mapping, China. 2011.7-2011.8</li>
-            <li>Undergraduate Research Assistant, Global Navigation Satellite System and Application Lab, Remote Sensing
-                and GIS Institute, Peking University, China. 2008.11-2010.7</li>
-        </ul>
-    </div>
-    <div>
-        <h4 class="subtitle">Publication</h4>
-        <ul>
-             <li><span class="me">Fu, C.</span>, Huang, H.S., and Weibel, R. (2020). 
-                Adaptive Simplification of GPS. Trajectories with Geographic Context. 
-                <span class="journal">
-                    Journal of Geographical Information Science
-                </span>. Accepted. DOI: 10.1080/13658816.2020.1778003
-            </li>
-            <li><span class="me">Fu, C.</span>, Song, X-P, and Stewart, K. (2019). 
-                Integrating Activity-Based Geographic Information and Long-Term Remote Sensing to Characterize Urban Land Use Change. 
-                <span class="journal">
-                    Remote Sensing
-                </span>. 11(24), 2965. DOI: 10.3390/rs11242965 
-            </li>
-            <li><span class="me">Fu, C.</span> and Weibel, R. (2019) Cross-scale Spatial 
-                Enrichment of Trajectories for Speeding Up Similarity Computing. 
-                <span class="jounrnal">
-                    Adjunct Proceedings of the 15th International Conference on Location Based Services. 
-                </span> 
-                Vienna, Austria. 2019. DOI: 10.34726/lbs2019 
-            </li>
-            <li><span class='me'>Fu, C.</span>, McKenzie, G., Frias-Martinez, V., and Stewart, K. (2018).
-                Identifying Spatiotemporal Urban Activities through Linguistic Signatures.
-                <span class="journal">Computers, Environment, and Urban Systems</span>. 72. 25-37</li>
-            <li>Hong, L., <span class='me'>Fu, C.</span>, Wu, J., and Frias-Martinez, V. (2018).
-                Insights from Online Communications for Local Government Managing Disaster Relief: the Case of
-                Snowstorm.
-                <span class="journal">Information Systems Frontiers</span>. 30(4). 387-396</li>
-            <li>Hong, L., <span class='me'>Fu, C.</span>, Torrens, P., and Frias-Martinez, V. (2017).
-                Understanding Citizens' and Local Governments' Digital Communications during Natural Disasters: The case
-                of Snowstorms.
-                <span class="journal">The 9th International ACM Web Science Conference 2017</span>. June 26-28, 2017
-            </li>
-            <li>Contribute to Chapter 2, Chapter 4 and Appendix 4 of Brunner, H-P (Apr. 2016).
-                <span class="journal">Innovation Networks and the New Asian Regionalism: A Knowledge Platform on
-                    Economic Productivity.</span>
-                Co-published by Asian Development Bank, Philippines & Edward Elgar Publishing, Cheltenham, UK &
-                Northampton, MA, USA.</li>
-            <li>Mishra, S., Welch, T., Torrens, P., <span class='me'>Fu, C.</span>, Zhu, H. and Knaap, E. (2015).
-                A tool for measuring and visualizing connectivity of transit stop, route and transfer center in a
-                multimodal transportation network.
-                <span class="journal">Public Transport</span>. 7(1). pp77-99</li>
-            <li><span class='me'>Fu, C.</span>, Samet, H. and Sankaranarayanan, J. (2014).
-                WeiboStand: Capturing Chinese Breaking News Using Weibo “Tweets”.
-                <span class="journal">ACM SIGSPATIAL LBSN'14</span>, November 04-07, 2014, Dallas/Fort Worth, TX, USA.
-            </li>
-            <li>Zheng, L., Li, M., Wu, C., Ye, H., Ji R., Deng X., Che Y., <span class='me'>Fu, C.</span>, and Guo, W.
-                (2011).
-                Development of a Smart Mobile Farming Service System.
-                <span class="journal">Mathematical and Computer Modelling</span>. 54 (3), 1194-1203.</li>
-        </ul>
-    </div>
-    <div>
-        <h4 class="subtitle">Research Experience</h4>
-        <ul>
-            <li>2018.7-present Track&Know: Big Data for Mobility Tracking Knowledge Extraction in Urban Areas, granted
-                by European Union’s Horizon 2020 Research and Innovation Program</li>
-            <li>2017.2-2018.5 Analyzing Travelers' Response to Different Active Traffic Management Technologies, granted
-                by the Maryland Department of Transportation Highway Administration</li>
-            <li>2014.10-2016.6 Collaborative Research: RIPS Type 1: Human Geography Motifs to Evaluate Infrastructure
-                Resilience (RA), granted by National Science Foundation, USA</li>
-            <li>2014.10-2014.12 Spatial Computing and Point Spatial Index in Hadoop</li>
-            <li>2014.6-2014.8 and 2014.10-2015.3. Socio-economic and Trade Information Collection and Visualization for
-                Great Mekong and Central Asia, Office of Regional Economic Integration, Asian Development Bank</li>
-            <li>2012.8-2014.4 Web-GIS based Crime Dashboard in Washington D.C. metropolitan (RA), granted by Dept. of
-                Justice, USA</li>
-            <li>2013.2-2013.5 Preliminary Study on Classifying Detailed Urban Land Use by Geotagged Tweets</li>
-            <li>2012.9-2012.12 Gesture-Detection-based Human-Robot Control System</li>
-            <li>2011.9-2012.4 Study on Characterizing Geo-Social Properties of Foursquare Users, SUNY Binghamton
-                University</li>
-            <li>2008.10-2010.7 Team member of Management System Development of Public Safety and Emergency Response,
-                granted by Ministry of Science and Technology of the P.R.C.</li>
-        </ul>
-    </div>
-    <div>
-        <h4 class="subtitle">Awards</h4>
-        <ul>
-            <li>NSF Mobility Workshop ’17 Travel Grant</li>
-            <li>ACM SIGSPATIAL’14 Travel Grant</li>
-        </ul>
-    </div>
-    <div>
-        <h4 class="subtitle">Presentations and Posters</h4>
-        <ul>
             <li>2018.12 AGU 2018 “Modeling the Diffuse Component of Solar Radiation Using Artificial Intelligence
                 Techniques” (poster)</li>
-            <li>2013.3 AAG Annual Conference 2013 “Characterize Geo-Social Properties of an Online Social Network
-                -identify connection between social and spatial clusters”</li>
-            <li>2014.2 Maryland Emergency Management Association Conference 2014 “Preliminary Study on Linking Twitter
-                to Crime Issues”</li>
-            <li>2014.4 AAG Annual Conference 2014 “Preliminary Study on Urban Land Use Classification by Georeferenced
-                Microblogs”</li>
-            <li>2014.11 ACM SigSPATIAL 2014 “WeiboStand: Capturing Chinese Breaking News Using Weibo”</li>
-            <li>2015.4 AAG Annual Conference 2015 “Simulate Human Daily Activity and Time Use Pattern Using Knowledge
-                from Twitter”</li>
-            <li>2016.4 AAG Annual Conference 2016 “Using Twitter-validated Agents to Reveal Urban Activity Motifs”</li>
-            <li>2017.4 AAG Annual Conference 2017 “Mining Text Topics in Georeferenced Tweets to Reveal Activity
-                Patterns in Urban Space”</li>
             <li>2017.5 NSF Mobility Workshop “Reconstructing Commuting Traffic Patterns from Georeferenced Tweets Using
                 Knowledge about Geographic Context”</li>
-        </ul>
+            <li>2017.4 AAG Annual Conference 2017 “Mining Text Topics in Georeferenced Tweets to Reveal Activity
+                Patterns in Urban Space”</li>
+            <li>2016.4 AAG Annual Conference 2016 “Using Twitter-validated Agents to Reveal Urban Activity Motifs”</li>
+            <li>2015.4 AAG Annual Conference 2015 “Simulate Human Daily Activity and Time Use Pattern Using Knowledge
+                from Twitter”</li>
+            <li>2014.11 ACM SigSPATIAL 2014 “WeiboStand: Capturing Chinese Breaking News Using Weibo”</li>
+            <li>2014.4 AAG Annual Conference 2014 “Preliminary Study on Urban Land Use Classification by Georeferenced
+                Microblogs”</li>
+            <li>2014.2 Maryland Emergency Management Association Conference 2014 “Preliminary Study on Linking Twitter
+                to Crime Issues”</li>
+            <li>2013.3 AAG Annual Conference 2013 “Characterize Geo-Social Properties of an Online Social Network
+                -identify connection between social and spatial clusters”</li>
+        </ol>
     </div>
-    <div>
-        <h4 class="subtitle">Service</h4>
-        <ul>Reviewer
-            <li>A.C.M. Transactions on Spatial Algorithms and Systems</li>
-            <li>Applied Energy</li>
-            <li>Cities</li>
-            <li>Computers, Environment and Urban Systems</li>
-            <li>International Journal of Geographical Information Sciences</li>
-            <li>ISPRS International Journal of Geo-Information</li>
-            <li>Journal of Spatial Information Science (JOSIS)</li>
-            <li>MDPI Algorithms</li>
-            <li>MDPI Sensors</li>
-            <li>MDPI Sustainability</li>
-            <li>Transactions in GIS (T-GIS)</li>
-            <li>Transportation Research Part A: Policy and Practice</li>
-        </ul>
-        <ul>Conference Program Committee
-            <li>LocBigData 2019, Tokyo, Japan</li>
-            <li>DataMod 2019, Porto, Portigal</li>
-        </ul>
+
+    <div class="container-fluid bg-3" id="projects">
+        <h4>Ongoing projects</h4>
+        <ol>
+            <li>2020.8-present — Mobility Assessment with Modern Technology in Older Patient’s Real-life by the General
+                Practitioner (MOBITEC-GP), funded by the ‘Velux-Stiftung’’ Foundation.</li>
+            <li>2019.11-present — Mobility, Activity, and Social Interaction Study (MOASIS), funded by the the
+                ‘Velux-Stiftung’ Foudation.</li>
+        </ol>
+        <h4>Finished projects</h4>
+        <ol>
+            <li>2018.7-2020.12 — Track&Know: Big Data for Mobility Tracking Knowledge Extraction in Urban Areas, funded
+                by European Union’s Horizon 2020 Research and Innovation Program.</li>
+            <li>2017.2-2018.5 — Analyzing Travelers’ Response to Different Active Traffic Management Technologies,
+                funded by the Maryland Department of Transportation State Highway Administration.</li>
+            <li>2014.10-2016.6 — Collaborative Research: Resilient Interdependent Infrastructure Processes and Systems
+                Type 1: Human Geography Motifs to Evaluate Infrastructure Resilience, funded by National Science
+                Foundation, U.S.A.</li>
+            <li>2014.10-2014.12 — Spatial Computing and Point Spatial Index in Hadoop</li>
+            <li>2014.6-2014.8 and 2014.10-2015.3 — Socio-economic and Trade Information Collection and Visualization for
+                Great Mekong and Central Asia, Office of Regional Economic Integration, Asian Development Bank.</li>
+            <li>2012.8-2014.4 — Web-GIS based Crime Dashboard in Washington D.C. metropolitan area (R.A.), funded by
+                Department of Justice, U.S.A.</li>
+            <li>2013.2-2013.5 — Preliminary Study on Classifying Detailed Urban Land Use by Geotagged Tweets. Department
+                of Geographical Sciences, University of Maryland.</li>
+            <li>2012.9-2012.12 — Gesture-Detection-based Human-Robot Control System. Department of Geographical
+                Sciences, University of Maryland.</li>
+            <li>2011.9-2012.4 — Study on Characterizing Geo-Social Properties of Foursquare Users, SUNY Binghamton
+                University.</li>
+            <li>2008.10-2010.7 — Team member of Management System Development of Public Safety and Emergency Response,
+                funded by Ministry of Science and Technology of the P.R.C.</li>
+        </ol>
     </div>
+
+    <div class="container-fluid bg-4" id="teaching">
+        <h4>Course taught</h4>
+        <ol>
+            <li>UZH 2020 GEO 874 Introduction to Databases, MSc program</li>
+            <li>UZH 2020 GEO 875 Spatial Databases, MSc program</li>
+            <li>UZH 2019-2021 GEO 881 Advanced Spatial Analysis II, MSc program</li>
+            <li>UZH 2019 GEO 876 Introduction to Programming for Spatial Problems, MSc program</li>
+            <li>UMD 2016 GEOG 476 Object-oriented Programming for GIS, BSc program</li>
+            <li>UMD 2016 GEOG 788F Big Data Analysis in Python, Short course for graduate students</li>
+        </ol>
+        <h4>Supervised students</h4>
+        <ol>
+            <li>Alexandra-Ioana Georgescu “Optimising Locations for Future Return Car-sharing Services: Case Study of the Swiss Car-sharing Cooperative Mobility”. Master Thesis. Main advisor. 2021.02-present</li> 
+            <li>Martin Specker. “Gait Analysis of Older Adults: Filter Comparison and Geographical Context”. Master thesis. Main advisor. 2020.10-present</li>
+            <li>Pascal Griffel. “Correlates of Older Adults’ Out-of-Home Behaviour: Linking Health and Cognition with Mobility Indica-tors Derived from GPS-Trajectories”. Master thesis. Main advisor, with Prof. Dr. Christina Röcke, Dept. of Psychology UZH. 2020.02-2021.01</li>
+            <li>Livio Brühwiler. “Predicting Individual Car Accident Risk using G.P.S. Trajectories and Critical Driving Events Data”. Master thesis. Main advisor. 2020.02-2021.01</li>
+            <li>Reetta Vaelimaeki. “The Relationship of Visiting Places and the Health of the Aging: through Spatial Trajectory Data”. Master thesis. Main advisor. 2019.08-2020.11. Graduated.</li>
+            <li>Ursina Boos. “Towards Cross-Scale Origin Destination Individual Mobility Networks Using Big Data”. Independent research project. Main advisor. 2018.09-2019.02</li> 
+        </ol>
+    </div>
+
+    <footer class="container-fluid bg-5 text-center" id="contact">
+        <p>Dr. Cheng Fu</p>
+
+        <p> Geographic Information Science (GIS)
+            Department of Geography
+            University of Zurich - Irchel
+            Winterthurerstr. 190
+            CH-8057 Zurich, Switzerland
+        </p>
+        
+        <p>
+            cheng.fu@geo.uzh.ch
+            Tel: +41-446355256
+        </p>
+    </footer>
 </body>
 
 </html>
