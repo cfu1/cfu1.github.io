@@ -85,7 +85,7 @@ author:
   bio              : "Lecturer in Geography at the University of Zurich, interested in GIScience, place, and mobility"
   location         : "Zurich, Switzerland"
   employer         : "University of Zurich"
-  pubmed           : ""
+  pubmed           : # ""
   googlescholar    : "https://scholar.google.ch/citations?user=U5xSkEAAAAAJ&hl=en"
   email            : "cheng.fu@uzh.ch"
   researchgate     : "https://www.researchgate.net/profile/Cheng-Fu-7?ev=hdr_xprf"
