@@ -81,14 +81,14 @@ analytics:
 # Site Author
 author:
   name             : "Dr. Cheng Fu"
-  avatar           : "profile.png"
+  avatar           : "me.png"
   bio              : "Lecturer in Geography at the University of Zurich, interested in GIScience, place, and mobility"
   location         : "Zurich, Switzerland"
   employer         : "University of Zurich"
   pubmed           : ""
   googlescholar    : "https://scholar.google.ch/citations?user=U5xSkEAAAAAJ&hl=en"
-  email            : "https://www.researchgate.net/profile/Cheng-Fu-7?ev=hdr_xprf"
-  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  email            : "cheng.fu@uzh.ch"
+  researchgate     : "https://www.researchgate.net/profile/Cheng-Fu-7?ev=hdr_xprf"
   uri              :
   bitbucket        :
   codepen          :
@@ -96,20 +96,20 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "academicpages"
+  github           : "cfu1"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+  LinkedIn         : "https://www.linkedin.com/in/cheng-fu-72084239/"
+  orcid            : "http://orcid.org/0000-0003-1562-7941"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "replacethistwitterhandle"
+  twitter          : # "replacethistwitterhandle"
   vine             :
   weibo            :
   xing             :
