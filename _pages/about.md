@@ -14,8 +14,8 @@ Cheng received his Ph.D. in Geography from the Department of Geographical Scienc
 
 Research interests
 ======
-Data mining and data modeling on human-behavior-related Big Data
-Urban place modeling
-Mobility and health
-Geographical information retrieval and visualization
-Understanding urban geography from human behavior
+* Data mining and data modeling on human-behavior-related Big Data
+* Urban place modeling
+* Mobility and health
+* Geographical information retrieval and visualization
+* Understanding urban geography from human behavior
