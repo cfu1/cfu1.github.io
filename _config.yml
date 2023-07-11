@@ -11,9 +11,9 @@ title                    : "Dr. Cheng Fu"
 title_separator          : "-"
 name                     : &name "Dr. Cheng Fu"
 description              : &description "Lecturer in the Department of Geography, University of Zurich"
-url                      : https://chengfu.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://cfu1.github.io/chengfu.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "chengfu.github.io"
+repository               : "cfu1.github.io/chengfu.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
