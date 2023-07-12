@@ -1,7 +1,7 @@
 ---
 title: "Remove and Move: Multi-Task Learning for Building Simplification of Vector Maps with Graph Convolutional Neural Network"
 collection: publications
-permalink: /publication/2023-6-21-isprs-zhou-fu-weibel
+permalink: /publications/2023-6-21-isprs-zhou-fu-weibel
 excerpt: ''
 date: 2023-6-21
 venue: 'ISPRS Journal of Photogrammetry and Remote Sensing'
