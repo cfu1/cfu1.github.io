@@ -7,6 +7,7 @@ date: 2019-12-11
 venue: 'Remote Sensing'
 paperurl: 'https://doi.org/10.3390/rs11242965'
 citation: 'Fu, C.*, Song, X.P., and Stewart, K. (2019). Integrating Activity-Based Geographic Information and Long-Term Remote Sensing to Characterize Urban Land Use Change. Remote Sensing. 11(24), 2965.'
+pubtype: 'journal'
 ---
 
 ## Abstract
