@@ -7,6 +7,7 @@ date: 2023-2-20
 venue: 'ISPRS International Journal of Geo-Information'
 paperurl: 'https://doi.org/10.3390/ijgi12020078'
 citation: 'He, J., Fu, C., Li, X., Dong J. X. & Ren. F. (2023). What Do We Know about the Multidimensional Poverty in China: Its Causes, Dynamics, and Implications for Sustainability. ISPRS International Journal of Geo-Information.'
+pubtype: 'journal'
 ---
 
 ## Abstract
