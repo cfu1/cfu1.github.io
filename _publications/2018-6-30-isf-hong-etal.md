@@ -7,6 +7,7 @@ date: 2018-6-30
 venue: 'Information Systems Frontiers'
 paperurl: 'https://doi.org/10.1145/3091478.3091502'
 citation: 'Hong, L., Fu, C., Wu, J., and Frias-Martinez, V. (2018). Insights from Online Communications for Local Government Managing Disaster Relief: the Case of Snowstorms. Information Systems Frontiers. 30(4). 387-396.'
+pubtype: 'journal'
 ---
 
 ## Abstract
