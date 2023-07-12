@@ -7,6 +7,7 @@ date: 2018-7-27
 venue: 'Computers, Environment, and Urban Systems'
 paperurl: 'https://doi.org/10.1016/j.compenvurbsys.2018.07.003'
 citation: 'Fu, C.*, McKenzie, G., Frias-Martinez, V., and Stewart, K. (2018). Identifying Spatiotemporal Urban Activities through Linguistic Signatures. Computers, Environment, and Urban Systems. 72. 25-37.'
+pubtype: 'journal'
 ---
 
 ## Abstract
