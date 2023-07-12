@@ -74,6 +74,12 @@ Teaching
   <ul>{% for post in site.teaching %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
+
+Awards
+======
+* International Graduate Workshop on GeoInformatics ’20 Excellent Presentation Award
+* NSF Mobility Workshop ’17 Travel Grant
+* ACM SIGSPATIAL’14 Travel Grant
   
 Service and leadership
 ======
