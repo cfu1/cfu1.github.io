@@ -7,6 +7,7 @@ date: 2021-3-16
 venue: 'Remote Sensing of Environment'
 paperurl: 'https://doi.org/10.1016/j.rse.2021.112393'
 citation: 'Chen, D., Fu, C., Hall, J., Hoy, E., and Loboda, T. (2021). Spatio-temporal Patterns of Optimal Landsat Data for Burn Severity Index Calculations: Implications for High Northern Latitudes Wildfire Research. Remote Sensing of Environment. 258, 112393.'
+pubtype: 'journal'
 ---
 
 ## Abstract
