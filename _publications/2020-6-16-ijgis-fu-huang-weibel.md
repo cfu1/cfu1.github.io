@@ -7,6 +7,7 @@ date: 2020-6-16
 venue: 'International Journal of Geographical Information Science'
 paperurl: 'https://doi.org/10.1080/13658816.2020.1778003'
 citation: 'Fu, C.*, Huang, H.S., and Weibel, R. (2020). Adaptive Simplification of GPS Trajectories with Geographic Context. International Journal of Geographical Information Science. 1-28.'
+pubtype: 'journal'
 ---
 
 ## Abstract
