@@ -7,6 +7,7 @@ date: 2019-4-24
 venue: 'Transportation Research Part C: Emerging Technologies'
 paperurl: 'https://doi.org/10.1016/j.trc.2019.04.019'
 citation: 'Fan, J.C., Fu, C., Stewart, K., and Zhang, L. (2019). Using Big GPS Trajectory Data Analytics for Vehicle Miles Traveled Estimation. Transportation Research Part C: Emerging Technologies. 103. 298-307.'
+pubtype: 'journal'
 ---
 
 ## Abstract
