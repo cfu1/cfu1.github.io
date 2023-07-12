@@ -1,7 +1,7 @@
 ---
 title: "A Conceptual Framework for Developing Dashboard for Big Mobility Data"
 collection: publications
-permalink: /publication/2023-4-11-cagis-conrow-etal
+permalink: /publications/2023-4-11-cagis-conrow-etal
 excerpt: ''
 date: 2023-4-11
 venue: 'IEEE Transactions on Intelligent Transportation Systems'
