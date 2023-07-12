@@ -7,6 +7,7 @@ date: 2010-12-4
 venue: 'Mathematical and Computer Modelling'
 paperurl: 'https://doi.org/10.1016/j.mcm.2010.11.053'
 citation: 'Zheng, L., Li, M., Wu, C., Ye, H., Ji R., Deng X., Che Y., Fu, C., and Guo, W. (2011). Development of a Smart Mobile Farming Service System. Mathematical and Computer Modelling 54 (3), 1194-1203.'
+subtype: 'journal'
 ---
 
 ## Abstract
