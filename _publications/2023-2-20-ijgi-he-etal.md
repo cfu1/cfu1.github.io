@@ -1,7 +1,7 @@
 ---
 title: "What Do We Know about the Multidimensional Poverty in China: Its Causes, Dynamics, and Implications for Sustainability"
 collection: publications
-permalink: /publication/2023-2-20-ijgi-he-etal
+permalink: /publications/2023-2-20-ijgi-he-etal
 excerpt: ''
 date: 2023-2-20
 venue: 'ISPRS International Journal of Geo-Information'
