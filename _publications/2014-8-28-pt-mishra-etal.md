@@ -7,6 +7,7 @@ date: 2014-8-28
 venue: 'Information Systems Frontiers'
 paperurl: 'https://doi.org/10.1007/s12469-014-0091-2'
 citation: 'Mishra, S., Welch, T., Torrens, P., Fu, C., Zhu, H., and Knaap, E. (2015). A tool for measuring and visualizing connectivity of transit stop, route and transfer center in a multimodal transportation network. Public Transport. 7(1). 77-99.'
+pubtype: 'journal'
 ---
 
 ## Abstract
