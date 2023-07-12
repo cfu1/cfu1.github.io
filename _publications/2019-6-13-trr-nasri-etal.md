@@ -7,6 +7,7 @@ date: 2019-6-13
 venue: 'Transportation Research Record'
 paperurl: 'https://doi.org/10.1177/0361198119850790'
 citation: 'Nasri, A., Zhang, L., Fan, J.C., Stewart, K., Younes, H., Fu, C., and Jessberger S. (2019). Advanced Vehicle Miles Traveled Estimation Methods for Non-federal Aid System Roadways using GPS Vehicle Trajectory Data and Statistical Power Analysis. Transportation Research Record. 2673(11). 296-308.'
+pubtype: 'journal'
 ---
 
 ## Abstract
