@@ -7,6 +7,7 @@ date: 2022-1-31
 venue: 'Computers, Environment, and Urban Systems'
 paperurl: 'https://doi.org/10.1016/j.compenvurbsys.2022.101760'
 citation: 'Bruehwiler, L., Fu, C.*, Huang, H.S., Longi, L., & Weibel, R. (2022) Modeling Individuals’ Car Accident Risk by Trajectory, Driving Events, and Geographical Context. Computers, Environment, and Urban Systems.'
+pubtype: 'journal'
 ---      
 
 ## Abstract
