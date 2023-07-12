@@ -1,12 +1,12 @@
 ---
 title: "Psychometric Properties of the MOBITEC-GP Mobile Application for Real-Life Mobility Assessment in Older Adults"
 collection: publications
-permalink: /publications/2022-11-2-aogg-giannouli-etal
+permalink: /publications/2022-11-2-gn-giannouli-etal
 excerpt: ''
 date: 2022-11-2
-venue: 'Archives of Gerontology and Geriatrics'
+venue: 'Geriatric Nursing'
 paperurl: 'https://doi.org/10.1016/j.gerinurse.2022.10.017'
-citation: 'Giannouli, E., Kim, E.K., Fu, C., Weibel, R., Sofios, A., Infanger, D., Protegijs, E., Rantanen, T., Huang, H.S., Schmidt-Trucksäss, A., Zeller, A., & Hinrichs, T. (2022). Psychometric Properties of the MOBITEC-GP Mobile Application for Real-Life Mobility Assessment in Older Adults. Archives of Gerontology and Geriatrics. 48. 273-279.'
+citation: 'Giannouli, E., Kim, E.K., Fu, C., Weibel, R., Sofios, A., Infanger, D., Protegijs, E., Rantanen, T., Huang, H.S., Schmidt-Trucksäss, A., Zeller, A., & Hinrichs, T. (2022). Psychometric Properties of the MOBITEC-GP Mobile Application for Real-Life Mobility Assessment in Older Adults. Geriatric Nursing. 48. 273-279.'
 ---
 
 ## Abstract
