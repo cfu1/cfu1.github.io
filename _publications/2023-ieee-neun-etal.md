@@ -1,7 +1,7 @@
 ---
 title: "Metropolitan Segment Traffic Speeds from Massive Floating Car Data in 10 Cities"
 collection: publications
-permalink: /publication/2023-ieee-neun-etal
+permalink: /publications/2023-ieee-neun-etal
 excerpt: ''
 date: 
 venue: 'IEEE Transactions on Intelligent Transportation Systems'
