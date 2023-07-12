@@ -7,6 +7,7 @@ date: 2023-1-24
 venue: 'Geo-spatial Information Science'
 paperurl: 'https://doi.org/10.1080/10095020.2022.2156821'
 citation: 'Zhao, F., Dai, Z.X., Zhang, W.Y., Shan, Y.T., Fu, C.* (2023). Epidemiological-Survey-based Multidimensional Modeling for Understanding Daily Mobility during the COVID-19 Pandemic Across Urban-Rural Gradient in the Chinese Mainland. Geo-spatial Information Science.'
+pubtype: 'journal'
 ---
 
 ## Abstract
