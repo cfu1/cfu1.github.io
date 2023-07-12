@@ -7,6 +7,7 @@ date: 2023-10-01
 venue: 'IEEE Transactions on Intelligent Transportation Systems'
 paperurl: ''
 citation: 'Neun, M., Eichenberger, C., Xin, Y.N., Fu, C., Wiedemann, N., Martin, H., Tomko, M. Ambuehl, L., Hermes, L., & Kopp, M. (accepted). Metropolitan Segment Traffic Speeds from Massive Floating Car Data in 10 Cities. IEEE Transactions on Intelligent Transportation Systems.'
+pubtype: 'journal'
 ---
 
 ## Abstract
