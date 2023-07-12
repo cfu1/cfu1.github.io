@@ -7,6 +7,7 @@ date: 2023-4-11
 venue: 'Cartography and Geographic Information Science'
 paperurl: 'https://doi.org/10.1080/15230406.2023.2190164'
 citation: 'Conrow, L., Fu, C.*, Huang, H.S., Andrienko, G., Andrienko, N., & Weibel. R. (2023). A Conceptual Framework for Developing Dashboard for Big Mobility Data. Cartography and Geographic Information Science.'
+pubtype: 'journal'
 ---
 
 ## Abstract
