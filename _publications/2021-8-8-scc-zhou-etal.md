@@ -7,6 +7,7 @@ date: 2021-8-8
 venue: 'Spatial Cognition & Computation'
 paperurl: 'https://doi.org/10.1080/13875868.2021.1959595'
 citation: 'Zhou, Z.Y., Weibel, R., Fu, C., Winter, S., and Huang, H.S. (2021) Indoor landmark selection for route communication: the influence of route-givers’ social roles and receivers’ familiarity with the environment. Spatial Cognition & Computation.'
+pubtype: 'journal'
 ---
 
 ## Abstract
