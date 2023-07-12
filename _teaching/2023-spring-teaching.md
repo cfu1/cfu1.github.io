@@ -1,5 +1,5 @@
 ---
-title: "GEO881 Advanced Spatial Analysis II"
+title: "GEO881 Advanced Spatial Analysis II 2019-2023"
 collection: teaching
 type: "Master course"
 permalink: /teaching/2023-spring-teaching
