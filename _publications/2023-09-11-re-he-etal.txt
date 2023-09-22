@@ -1,0 +1,16 @@
+---
+title: "The effect of large scale photovoltaic-based projects on poverty reduction: Empirical evidence from China"
+collection: publications
+permalink: /publications/2023-09-11-re-he-etal
+excerpt: ''
+date: 2023-9-11
+venue: 'Renewable Energy'
+paperurl: 'https://doi.org/10.1016/j.renene.2023.119294'
+citation: 'He, J., Ren, F., Weibel, R., & Fu, C. (2023). The effect of large scale photovoltaic-based projects on poverty reduction: Empirical evidence from China. Renewable Energy, 119294.'
+pubtype: 'journal'
+---
+
+## Abstract
+
+As a high-quality clean energy, exploring the benefits of solar photovoltaic (PV) projects on regional economy and sustainable development will challenge its development at the policy and planning levels, which also involves two key goals in the Sustainable Development Goals (SDGs) proposed by the United Nations: poverty reduction and clean energy provision. To address this problem, we take China's Photovoltaic Poverty Alleviation Project (PPAP) as an example to empirically study the benefits of large-scale PV deployment for alleviating poverty in its multiple dimensions and achieving regional sustainable development. We investigated its effect using a panel dataset of 71 pilot counties supported by PPAP in China from 2014 to 2017, with propensity score matching and difference-in-difference estimation as the main modeling tools. We found that PPAP can reduce multidimensional poverty on average by 3.0% in a county, benefiting sustainable livelihoods. In detail regarding multidimensional poverty alleviation, PPAP can effectively reduce the poverty level of economic capital, social capital, and human capital. However, it has a limited impact on physical and natural capital. Besides, state-designated poverty counties benefit more from PPAP than the non-poverty counties. Geographically, the poverty reduction effect of PPAP also shows strong regional heterogeneity, with the most substantial poverty alleviation effect in Northwest China. Our research will enhance the public's understanding of PPAP, promote the realization of Goal 1 on poverty reduction and Goal 7 on affordable and clean energy in SDGs, and provide a reference for policymakers for future decision-making, as well as for large-scale PV project deployment in other developing countries.
+
