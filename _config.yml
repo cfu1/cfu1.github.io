@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Dr. Cheng Fu"
 title_separator          : "-"
 name                     : &name "Dr. Cheng Fu"
-description              : &description "Lecturer in the Department of Geography, University of Zurich"
+description              : &description "Professor at the China Agricultural University"
 url                      : https://cfu1.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "cfu1.github.io"
@@ -80,14 +80,14 @@ analytics:
 
 # Site Author
 author:
-  name             : "Dr. Cheng Fu"
+  name             : "Prof. Dr. Cheng Fu"
   avatar           : "profile.jpg"
-  bio              : "Lecturer in Geography at the University of Zurich, interested in GIScience, place, and mobility"
-  location         : "Zurich, Switzerland"
-  employer         : "University of Zurich"
+  bio              : "Professor at the China Agricultural University, interested in GIScience, place, and mobility."
+  location         : "Beijing, China"
+  employer         : "China Agricultural University"
   pubmed           : # ""
   googlescholar    : "https://scholar.google.ch/citations?user=U5xSkEAAAAAJ&hl=en"
-  email            : "cheng.fu@uzh.ch"
+  email            : "cheng.fu@cau.edu.cn"
   researchgate     : "https://www.researchgate.net/profile/Cheng-Fu-7?ev=hdr_xprf"
   uri              :
   bitbucket        :
