@@ -32,6 +32,19 @@ redirect_from:
 
 ## Master students
 ### On going
+* Mengqi Li
+  * Master thesis. Main advisor.
+  * "Quantifying the Impact of Transportation Diversity on Human Mobility Resilience During Extreme Disasters: A Case Study of NYC during Hurricane Ida"
+ 
+* Ye Sun (CAU)
+  * Master thesis. Main advisor.
+  * "Modeling the Resilience of Long-period Dyanamic Systems: a Case Study of Extreme Precipitation Events on Winter Wheat Harvesting in China"
+ 
+* Jinxuan Li (CAU)
+  * Master thesis. Main advisor.
+  * Working title: Robustness of field area calculation algorithms based on agricultural machinery trajectories 
+
+### 2025
 * Joris Senn
   * Master thesis. Co-advisor, with Prof. Dr. Robert Weibel and Dr. Zhiyong Zhou
   * “Context-based operator classification for cartographic building generalization: A multimodal deep learning approach”
