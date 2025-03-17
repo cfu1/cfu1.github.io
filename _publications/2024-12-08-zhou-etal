@@ -1,0 +1,15 @@
+---
+title: "Quantifying indoor navigation map information considering the dynamic map elements for scale adaptation"
+collection: publications
+permalink: /publications/2024-12-08-zhou-etal
+excerpt: ''
+date: 2024-12-8
+venue: 'International Journal of Applied Earth Observation and Geoinformation'
+paperurl: 'https://doi.org/10.1016/j.jag.2024.104323'
+citation: 'Zhou, J., Shen, J., Fu, C., Weibel, R., & Zhou, Z. (2025). Quantifying indoor navigation map information considering the dynamic map elements for scale adaptation. International Journal of Applied Earth Observation and Geoinformation, 136, 104323.'
+pubtype: 'journal'
+---
+
+## Abstract
+
+The indoor map is an indispensable component to visualize human users’ real-time locations and guided routes to find their destinations in large and complex buildings efficiently. The map design in existing mobile indoor navigation systems mostly considers either the user locations or the route segments but seldom considers the adaptation of the base map scale. Due to uneven densities of spatial elements, the complexity of routes, and the diversity of spatial distribution of navigation decision points, the base map information of indoor navigation maps varies greatly. Hence, it is inevitable to cause an inappropriate amount of map information at different locations and routes. Additionally, existing multi-scale representations of indoor maps are limited to certain scales but not adapted to building locations. Users have to adjust the map scales frequently through multiple interactions with the navigation system. In this study, we propose a method that considers the dynamic elements of indoor maps to quantify the map information for scale adaptation. The indoor navigation map information calculation includes both geometry information and spatial distribution information of static base map elements (area elements, POIs) and dynamic route elements (segments, decision points). The total map information is quantified by setting the weights of the two types of elements. An empirical study on indoor navigation map selection was conducted. Results show that the quantified map information using the proposed method can reflect a user-desired map better than the traditionally used scales.
