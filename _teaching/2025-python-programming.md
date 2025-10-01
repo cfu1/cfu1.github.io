@@ -6,3 +6,4 @@ permalink: /teaching/2025-autumn-teaching
 venue: "China Agricultural University, College of Information and Electrical Engineering"
 date: 2025-9-23
 location: "Beijing, China"
+---
