@@ -5,7 +5,7 @@ permalink: /publications/2026-02-18-ijgis-zhou-etal
 excerpt: ''
 date: 2026-2-18
 venue: 'International Journal of Geographical Information Science'
-paperurl: '[https://doi.org/10.1016/j.mcm.2010.11.053](https://doi.org/10.1080/13658816.2026.2626935 )'
+paperurl: 'https://doi.org/10.1080/13658816.2026.2626935'
 citation: 'Zhou, Z., Fu, C.*, Feng, Y., Touya, G., Sester, M., & Weibel, R. (2026). GeoAI for map generalization in multi-scale cartography: foundations, a research agenda, and interdisciplinary perspectives. International Journal of Geographical Information Science, 1–29.'
 pubtype: 'journal'
 ---
