@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionHeader from './SectionHeader.astro';
+import { site } from '../data/site';
+import { cv } from '../data/cv';
+import { useTranslations, type Lang } from '../i18n/utils';
+
+interface Props { lang: Lang; }
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+const sep = lang === 'zh' ? '，' : ', ';
+---
+<BaseLayout title={`${t('cv.title')} — ${site.name}`}>
+  <div class="container page">
+    <h1>{t('cv.title')}</h1>
+    <hr class="rule" />
+    <section>
+      <SectionHeader title={t('cv.education')} />
+      <ul class="cv-list" role="list">
+        {cv.education.map((e) => (
+          <li><span class="label">{e.period}</span> {e.role[lang]}{e.org ? `${sep}${e.org[lang]}` : ''}</li>
+        ))}
+      </ul>
+    </section>
+    <section>
+      <SectionHeader title={t('cv.positions')} />
+      <ul class="cv-list" role="list">
+        {cv.positions.map((e) => (
+          <li><span class="label">{e.period}</span> {e.role[lang]}{e.org ? `${sep}${e.org[lang]}` : ''}</li>
+        ))}
+      </ul>
+    </section>
+    <section>
+      <SectionHeader title={t('cv.awards')} />
+      <ul class="cv-list" role="list">{cv.awards.map((a) => <li>{a[lang]}</li>)}</ul>
+    </section>
+    <section>
+      <SectionHeader title={t('cv.service')} />
+      <ul class="cv-list" role="list">
+        {cv.service.map((group) => (
+          <li>
+            {group.label[lang]}
+            <ul class="cv-sublist" role="list">
+              {group.items.map((item) => <li>{item[lang]}</li>)}
+            </ul>
+          </li>
+        ))}
+      </ul>
+    </section>
+  </div>
+</BaseLayout>

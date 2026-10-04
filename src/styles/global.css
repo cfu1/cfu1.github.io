@@ -63,3 +63,5 @@ a:hover { text-decoration: underline; }
 
 .cv-list { list-style: none; padding: 0; margin: 0 0 var(--space-5); display: grid; gap: var(--space-2); }
 .cv-list li { border-bottom: 1px solid var(--rule); padding-bottom: var(--space-2); }
+.page { padding-block: var(--space-6); }
+.cv-sublist { list-style: none; padding: 0; margin: var(--space-2) 0 0; display: grid; gap: var(--space-1); color: var(--muted); }
