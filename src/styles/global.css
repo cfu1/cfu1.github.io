@@ -16,6 +16,7 @@ a:hover { text-decoration: underline; }
 
 .container { max-width: var(--page-max); margin: 0 auto; padding: 0 var(--gutter); }
 .prose { max-width: var(--measure); }
+.prose a { text-decoration: underline; }
 
 .rule { border: 0; border-top: 1px solid var(--rule); margin: var(--space-5) 0; }
 
