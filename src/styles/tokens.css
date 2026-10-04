@@ -1,0 +1,33 @@
+:root {
+  --ink: #111111;
+  --bg: #ffffff;
+  --muted: #666666;
+  --rule: #e2e2e2;
+
+  --font-sans: 'Inter Variable', 'Inter', Helvetica, Arial, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace;
+
+  --measure: 72ch;
+  --page-max: 1200px;
+  --gutter: 1.5rem;
+
+  --step--1: 0.75rem;
+  --step-0: 1rem;
+  --step-1: 1.25rem;
+  --step-2: 1.75rem;
+  --step-3: 2.5rem;
+  --step-4: 3.5rem;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2.5rem;
+  --space-6: 4rem;
+
+  --theme-mobility-health: #3b5ba5;
+  --theme-generalization-geoai: #c0492f;
+  --theme-place-giscience: #7a4a6b;
+  --theme-urban-analytics: #c08a2e;
+  --theme-agri-environment: #5e7a3a;
+}
