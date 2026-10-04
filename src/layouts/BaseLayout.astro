@@ -1,0 +1,44 @@
+---
+import '@fontsource-variable/inter';
+import '@fontsource/ibm-plex-mono/400.css';
+import '../styles/tokens.css';
+import '../styles/global.css';
+import SiteHeader from '../components/SiteHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import { getLangFromUrl, getAltPath, useTranslations } from '../i18n/utils';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = '' } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const currentPath = Astro.url.pathname;
+const enPath = lang === 'en' ? currentPath : getAltPath(currentPath);
+const zhPath = lang === 'zh' ? currentPath : getAltPath(currentPath);
+const abs = (p: string) => new URL(p, Astro.site).href;
+---
+<!doctype html>
+<html lang={lang === 'zh' ? 'zh-CN' : 'en'}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/favicon.ico" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={abs(currentPath)} />
+    <link rel="alternate" hreflang="en" href={abs(enPath)} />
+    <link rel="alternate" hreflang="zh" href={abs(zhPath)} />
+    <link rel="alternate" hreflang="x-default" href={abs(enPath)} />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">{t('meta.skipToContent')}</a>
+    <SiteHeader lang={lang} />
+    <main id="main">
+      <slot />
+    </main>
+    <SiteFooter lang={lang} />
+  </body>
+</html>

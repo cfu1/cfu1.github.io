@@ -1,7 +1,9 @@
 ---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { site } from '../data/site';
 ---
-<!doctype html>
-<html lang="en">
-  <head><meta charset="utf-8" /><title>Dr. Cheng Fu</title></head>
-  <body><h1>Dr. Cheng Fu</h1></body>
-</html>
+<BaseLayout title={`${site.name} — Urban GeoInformatics`}>
+  <div class="container" style="padding-block: var(--space-6);">
+    <h1>{site.name}</h1>
+  </div>
+</BaseLayout>

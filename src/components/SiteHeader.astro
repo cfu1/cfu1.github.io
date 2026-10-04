@@ -1,0 +1,21 @@
+---
+import { navigation } from '../data/navigation';
+import { site } from '../data/site';
+import { useTranslations, localizePath, getAltPath, type Lang } from '../i18n/utils';
+
+interface Props { lang: Lang; }
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+const altPath = getAltPath(Astro.url.pathname);
+---
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="site-header__brand" href={localizePath('/', lang)}>{site.name}</a>
+    <nav class="site-header__nav" aria-label="Primary">
+      {navigation.map((item) => (
+        <a class="site-header__link" href={localizePath(item.path, lang)}>{t(`nav.${item.key}`)}</a>
+      ))}
+    </nav>
+    <a class="site-header__lang" href={altPath} hreflang={lang === 'en' ? 'zh' : 'en'}>{t('meta.switchLabel')}</a>
+  </div>
+</header>
