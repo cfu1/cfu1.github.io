@@ -1,12 +1,11 @@
 ---
 import { navigation } from '../data/navigation';
 import { site } from '../data/site';
-import { useTranslations, localizePath, getAltPath, type Lang } from '../i18n/utils';
+import { useTranslations, localizePath, type Lang } from '../i18n/utils';
 
-interface Props { lang: Lang; }
-const { lang } = Astro.props;
+interface Props { lang: Lang; altPath: string; }
+const { lang, altPath } = Astro.props;
 const t = useTranslations(lang);
-const altPath = getAltPath(Astro.url.pathname);
 ---
 <header class="site-header">
   <div class="container site-header__inner">
