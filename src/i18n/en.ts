@@ -34,4 +34,6 @@ export const en = {
     service: 'Service & leadership',
   },
   footer: { rights: 'All rights reserved.' },
-} as const;
+};
+
+export type Dict = typeof en;

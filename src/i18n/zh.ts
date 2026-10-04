@@ -1,4 +1,6 @@
-export const zh = {
+import type { Dict } from './en';
+
+export const zh: Dict = {
   meta: {
     langName: '中文',
     switchLabel: 'English',
@@ -34,4 +36,4 @@ export const zh = {
     service: '学术服务',
   },
   footer: { rights: '版权所有。' },
-} as const;
+};

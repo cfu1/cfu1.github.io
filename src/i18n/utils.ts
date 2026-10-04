@@ -1,8 +1,14 @@
-import { en } from './en';
+import { en, type Dict } from './en';
 import { zh } from './zh';
 
-export const languages = { en, zh };
+export const languages: Record<'en' | 'zh', Dict> = { en, zh };
 export type Lang = keyof typeof languages;
+
+type Leaves<T> = {
+  [K in keyof T & string]: T[K] extends string ? K : `${K}.${Leaves<T[K]>}`;
+}[keyof T & string];
+
+export type TranslationKey = Leaves<typeof en>;
 
 export function getLangFromUrl(url: URL): Lang {
   const first = url.pathname.split('/')[1];
@@ -10,11 +16,13 @@ export function getLangFromUrl(url: URL): Lang {
 }
 
 export function useTranslations(lang: Lang) {
-  const dict = languages[lang] as Record<string, unknown>;
-  return function t(key: string): string {
+  return function t(key: TranslationKey): string {
     const value = key
       .split('.')
-      .reduce<unknown>((acc, part) => (acc && typeof acc === 'object' ? (acc as Record<string, unknown>)[part] : undefined), dict);
+      .reduce<unknown>(
+        (acc, part) => (acc && typeof acc === 'object' ? (acc as Record<string, unknown>)[part] : undefined),
+        languages[lang] as unknown,
+      );
     return typeof value === 'string' ? value : key;
   };
 }
