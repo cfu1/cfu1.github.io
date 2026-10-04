@@ -4,6 +4,8 @@ Astro static site. Bilingual: English at `/`, Chinese at `/zh/`.
 
 ## Develop
 
+Requires Node 20 or newer.
+
     npm install
     npm run dev        # http://localhost:4321
     npm run build      # output in dist/
