@@ -48,3 +48,15 @@ a:hover { text-decoration: underline; }
 .site-footer { border-top: 1px solid var(--rule); margin-top: var(--space-6); }
 .site-footer__inner { display: flex; justify-content: space-between; gap: var(--space-3); padding: var(--space-4) 0; font-size: var(--step--1); color: var(--muted); flex-wrap: wrap; }
 .site-footer__links { display: flex; gap: var(--space-3); }
+
+.section-header { margin-bottom: var(--space-4); }
+.section-header__intro { color: var(--muted); margin-top: var(--space-2); }
+.home-section { padding-block: var(--space-5); border-top: 1px solid var(--rule); }
+.home-hero { padding-block: var(--space-6) var(--space-5); }
+.home-hero__role { color: var(--muted); margin-top: var(--space-3); }
+.home-hero__intro { margin-top: var(--space-4); max-width: var(--measure); }
+.research-list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-4); }
+.research-item { border-top: 3px solid; padding-top: var(--space-3); }
+.research-item__num { font-family: var(--font-mono); font-size: var(--step--1); color: var(--muted); }
+.research-item__label { font-size: var(--step-1); font-weight: 700; margin-top: var(--space-1); }
+.research-item__desc { color: var(--muted); margin-top: var(--space-2); max-width: 46ch; }

@@ -1,11 +1,11 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import SectionHeader from '../components/SectionHeader.astro';
-import { site } from '../data/site';
-import { researchAreas } from '../data/researchAreas';
-import { useTranslations } from '../i18n/utils';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SectionHeader from '../../components/SectionHeader.astro';
+import { site } from '../../data/site';
+import { researchAreas } from '../../data/researchAreas';
+import { useTranslations } from '../../i18n/utils';
 
-const lang = 'en';
+const lang = 'zh';
 const t = useTranslations(lang);
 const areas = [...researchAreas].sort((a, b) => a.order - b.order);
 ---
@@ -22,8 +22,8 @@ const areas = [...researchAreas].sort((a, b) => a.order - b.order);
       {areas.map((area) => (
         <li class="research-item" style={`border-color:${area.color}`}>
           <span class="research-item__num">{String(area.order).padStart(2, '0')}</span>
-          <div class="research-item__label">{area.label.en}</div>
-          <p class="research-item__desc">{area.desc.en}</p>
+          <div class="research-item__label">{area.label.zh}</div>
+          <p class="research-item__desc">{area.desc.zh}</p>
         </li>
       ))}
     </ul>
