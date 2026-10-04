@@ -60,3 +60,6 @@ a:hover { text-decoration: underline; }
 .research-item__num { font-family: var(--font-mono); font-size: var(--step--1); color: var(--muted); }
 .research-item__label { font-size: var(--step-1); font-weight: 700; margin-top: var(--space-1); }
 .research-item__desc { color: var(--muted); margin-top: var(--space-2); max-width: 46ch; }
+
+.cv-list { list-style: none; padding: 0; margin: 0 0 var(--space-5); display: grid; gap: var(--space-2); }
+.cv-list li { border-bottom: 1px solid var(--rule); padding-bottom: var(--space-2); }
