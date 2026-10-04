@@ -18,7 +18,7 @@ const sep = lang === 'zh' ? '，' : ', ';
       <SectionHeader title={t('cv.education')} />
       <ul class="cv-list" role="list">
         {cv.education.map((e) => (
-          <li><span class="label">{e.period}</span> {e.role[lang]}{e.org ? `${sep}${e.org[lang]}` : ''}</li>
+          <li><span class="label">{e.period[lang]}</span> {e.role[lang]}{e.org ? `${sep}${e.org[lang]}` : ''}</li>
         ))}
       </ul>
     </section>
@@ -26,7 +26,7 @@ const sep = lang === 'zh' ? '，' : ', ';
       <SectionHeader title={t('cv.positions')} />
       <ul class="cv-list" role="list">
         {cv.positions.map((e) => (
-          <li><span class="label">{e.period}</span> {e.role[lang]}{e.org ? `${sep}${e.org[lang]}` : ''}</li>
+          <li><span class="label">{e.period[lang]}</span> {e.role[lang]}{e.org ? `${sep}${e.org[lang]}` : ''}</li>
         ))}
       </ul>
     </section>

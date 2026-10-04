@@ -4,7 +4,7 @@ export interface LocalizedText {
 }
 
 export interface CvEntry {
-  period: string;
+  period: LocalizedText;
   role: LocalizedText;
   org?: LocalizedText;
 }
@@ -17,29 +17,29 @@ export interface CvServiceGroup {
 export const cv = {
   education: [
     {
-      period: '2010',
+      period: { en: '2010', zh: '2010' },
       role: { en: 'B.S. in Remote Sensing and GIS', zh: '遥感与地理信息系统学士' },
       org: { en: 'Peking University, PRC', zh: '北京大学，中国' },
     },
     {
-      period: '2012',
+      period: { en: '2012', zh: '2012' },
       role: { en: 'M.A. in Geography', zh: '地理学硕士' },
       org: { en: 'Binghamton University, USA', zh: '宾汉姆顿大学，美国' },
     },
     {
-      period: '2018',
+      period: { en: '2018', zh: '2018' },
       role: { en: 'PhD in Geography', zh: '地理学博士' },
       org: { en: 'University of Maryland, USA', zh: '马里兰大学，美国' },
     },
   ] satisfies CvEntry[],
   positions: [
     {
-      period: '2021.11–',
+      period: { en: '2021.11–present', zh: '2021.11–至今' },
       role: { en: 'Group Leader of Urban Geoinformatics', zh: '城市地理信息学团队负责人' },
       org: { en: 'Department of Geography, University of Zurich', zh: '苏黎世大学地理系' },
     },
     {
-      period: '2020.10–',
+      period: { en: '2020.10–present', zh: '2020.10–至今' },
       role: { en: '"Oberassistent" (Lecturer/Senior Scientist)', zh: '“Oberassistent”（讲师/资深科学家）' },
       org: {
         en: 'Geographic Information Systems Unit, Department of Geography, University of Zurich',
@@ -47,52 +47,52 @@ export const cv = {
       },
     },
     {
-      period: '2018.7–2020.9',
+      period: { en: '2018.7–2020.9', zh: '2018.7–2020.9' },
       role: { en: 'Postdoctoral Fellow', zh: '博士后研究员' },
       org: { en: 'Department of Geography, University of Zurich', zh: '苏黎世大学地理系' },
     },
     {
-      period: '2016.2–2018.5',
+      period: { en: '2016.2–2018.5', zh: '2016.2–2018.5' },
       role: { en: 'Teaching Assistant and Graduate Assistant', zh: '助教与研究生助理' },
       org: { en: 'Department of Geographical Sciences, University of Maryland', zh: '马里兰大学地理科学系' },
     },
     {
-      period: '2016.1–2016.5',
+      period: { en: '2016.1–2016.5', zh: '2016.1–2016.5' },
       role: { en: 'Instructor of Object-oriented programming for GIS', zh: '面向 GIS 的面向对象编程课程讲师' },
       org: { en: 'Department of Geographical Sciences, University of Maryland', zh: '马里兰大学地理科学系' },
     },
     {
-      period: '2016.1',
+      period: { en: '2016.1', zh: '2016.1' },
       role: { en: 'Teacher of Big Data Analysis on Python', zh: 'Python 大数据分析课程教师' },
       org: { en: 'Department of Geographical Sciences, University of Maryland', zh: '马里兰大学地理科学系' },
     },
     {
-      period: '2015.9–2015.12',
+      period: { en: '2015.9–2015.12', zh: '2015.9–2015.12' },
       role: { en: 'Teaching Assistant and Graduate Research Assistant', zh: '助教与研究生研究助理' },
       org: { en: 'Department of Geographical Sciences, University of Maryland', zh: '马里兰大学地理科学系' },
     },
     {
-      period: '2014.10–2015.3',
+      period: { en: '2014.10–2015.3', zh: '2014.10–2015.3' },
       role: { en: 'Technology Assistant Consultant', zh: '技术助理顾问' },
       org: { en: 'Office of Regional Economic Integration, Asian Development Bank', zh: '亚洲开发银行区域经济一体化办公室' },
     },
     {
-      period: '2014.6–2014.8',
+      period: { en: '2014.6–2014.8', zh: '2014.6–2014.8' },
       role: { en: 'Intern Consultant', zh: '实习顾问' },
       org: { en: 'Office of Regional Economic Integration, Asian Development Bank', zh: '亚洲开发银行区域经济一体化办公室' },
     },
     {
-      period: '2012.8–2015.5',
+      period: { en: '2012.8–2015.5', zh: '2012.8–2015.5' },
       role: { en: 'Graduate Research Assistant', zh: '研究生研究助理' },
       org: { en: 'Department of Geographical Sciences, University of Maryland', zh: '马里兰大学地理科学系' },
     },
     {
-      period: '2012.2–2012.5',
+      period: { en: '2012.2–2012.5', zh: '2012.2–2012.5' },
       role: { en: 'Graduate Assistant of the Vice Dean of Graduate School', zh: '研究生院副院长研究生助理' },
       org: { en: 'Binghamton University', zh: '宾汉姆顿大学' },
     },
     {
-      period: '2011.7–2011.8',
+      period: { en: '2011.7–2011.8', zh: '2011.7–2011.8' },
       role: { en: 'Internship as Software Engineer', zh: '软件工程师实习' },
       org: {
         en: 'Geomatics Center of Zhejiang, Zhejiang Institute of Survey and Mapping, China',
@@ -100,7 +100,7 @@ export const cv = {
       },
     },
     {
-      period: '2008.11–2010.7',
+      period: { en: '2008.11–2010.7', zh: '2008.11–2010.7' },
       role: { en: 'Undergraduate Research Assistant', zh: '本科生研究助理' },
       org: {
         en: 'Global Navigation Satellite System and Application Lab, Remote Sensing and GIS Institute, Peking University, China',
