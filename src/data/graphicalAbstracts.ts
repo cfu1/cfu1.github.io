@@ -15,7 +15,7 @@ export interface GraphicalAbstract {
   schematic: SchematicId;
 }
 
-export const graphicalAbstracts: Record<string, GraphicalAbstract> = {
+export const graphicalAbstracts: Record<string, GraphicalAbstract | undefined> = {
   '2018-7-27-ceus-fu-etal': {
     takeaway: 'Linguistic signatures in social media reveal spatiotemporal urban activities.',
     keywords: ['urban activities', 'social media', 'linguistic signatures'],
