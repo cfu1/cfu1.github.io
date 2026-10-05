@@ -1,0 +1,30 @@
+---
+import type { Publication } from '../data/publications';
+import type { GraphicalAbstract } from '../data/graphicalAbstracts';
+import { researchAreas } from '../data/researchAreas';
+import { type Lang } from '../i18n/utils';
+import Schematic from './Schematic.astro';
+
+interface Props {
+  paper: Publication;
+  entry: GraphicalAbstract;
+  lang: Lang;
+}
+const { paper, entry, lang } = Astro.props;
+const area = researchAreas.find((a) => a.id === paper.theme);
+const lightThemes = new Set(['urban-analytics']);
+const fg = lightThemes.has(paper.theme) ? '#111111' : '#ffffff';
+---
+<figure class="gabstract" style={`--ga-color:var(--theme-${paper.theme});--ga-fg:${fg}`}>
+  <div class="gabstract__panel">
+    <span class="gabstract__theme">{area?.label[lang] ?? ''}</span>
+    <div class="gabstract__schematic"><Schematic id={entry.schematic} /></div>
+  </div>
+  <div class="gabstract__body">
+    <p class="gabstract__takeaway">{entry.takeaway}</p>
+    <div class="gabstract__foot">
+      <span>{entry.keywords.join(' · ')}</span>
+      <span>{paper.venue} · {paper.year}</span>
+    </div>
+  </div>
+</figure>
