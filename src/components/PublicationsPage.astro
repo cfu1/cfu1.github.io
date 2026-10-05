@@ -1,0 +1,85 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { site } from '../data/site';
+import { publications, publicationUrl } from '../data/publications';
+import { researchAreas } from '../data/researchAreas';
+import { useTranslations, type Lang } from '../i18n/utils';
+
+interface Props { lang: Lang; }
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+const areaById = new Map(researchAreas.map((a) => [a.id, a]));
+const kindLabel: Record<string, string> = {
+  'short-paper': t('publications.kind.shortPaper'),
+  abstract: t('publications.kind.abstract'),
+  preprint: t('publications.kind.preprint'),
+};
+const localize = (p: string) => (lang === 'zh' ? (p === '/' ? '/zh/' : `/zh${p}`) : p);
+const sorted = [...publications].sort((a, b) => b.date.localeCompare(a.date));
+const defs = [
+  { key: 'journal' as const, label: t('publications.journal') },
+  { key: 'conference' as const, label: t('publications.conference') },
+  { key: 'academic' as const, label: t('publications.academic') },
+];
+const sections = defs
+  .map((d) => {
+    const items = sorted.filter((p) => p.type === d.key);
+    const years = [...new Set(items.map((p) => p.year))].sort((a, b) => b - a);
+    return { key: d.key, label: d.label, items, years };
+  })
+  .filter((d) => d.items.length > 0);
+const allYears = [...new Set(sorted.map((p) => p.year))].sort((a, b) => b - a);
+const yearAnchor = (year: number) => {
+  const section = sections.find((s) => s.items.some((p) => p.year === year));
+  return `${section?.key ?? 'journal'}-${year}`;
+};
+---
+<BaseLayout title={`${t('publications.title')} — ${site.name}`} description={t('publications.intro')}>
+  <div class="container page">
+    <h1>{t('publications.title')}</h1>
+    <p class="prose muted">{t('publications.intro')}</p>
+
+    <nav class="pub-index" aria-label={t('publications.title')}>
+      <div class="pub-index__row">
+        {sections.map((s) => (
+          <a href={`#${s.key}`}>{s.label} <span class="pub-index__count">{s.items.length}</span></a>
+        ))}
+      </div>
+      <div class="pub-index__row">
+        <span class="label">{lang === 'zh' ? '年份' : 'Years'}</span>
+        {allYears.map((year) => (
+          <a href={`#${yearAnchor(year)}`}>{year}</a>
+        ))}
+      </div>
+    </nav>
+
+    {sections.map((section) => (
+      <section class="section" id={section.key}>
+        <h2>{section.label}</h2>
+        {section.years.map((year) => (
+          <div class="pub-year" id={`${section.key}-${year}`}>
+            <div class="pub-year__label">{year}</div>
+            <ul class="paper-list" role="list">
+              {section.items.filter((p) => p.year === year).map((p) => (
+                <li class={`paper${p.kind === 'abstract' ? ' paper--abstract' : ''}`} style={`border-left-color:var(--theme-${p.theme})`}>
+                  <div class="paper__theme" style={`color:var(--theme-${p.theme})`}>
+                    {areaById.get(p.theme)?.label[lang] ?? ''}
+                    {p.kind && p.kind !== 'paper' && <span class="paper__kind">{kindLabel[p.kind]}</span>}
+                  </div>
+                  <h3 class="paper__title">
+                    <a href={localize(`/publications/${p.slug}`)}>{p.title}</a>
+                  </h3>
+                  <p class="paper__meta">{p.venue}</p>
+                  <p class="paper__citation">{p.citation}</p>
+                  {publicationUrl(p) && (
+                    <a class="paper__link" href={publicationUrl(p)}>{t('publications.readPaper')} ↗</a>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </section>
+    ))}
+  </div>
+</BaseLayout>

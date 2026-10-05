@@ -6,7 +6,6 @@ export const en = {
   },
   nav: {
     home: 'Home',
-    research: 'Research',
     people: 'People',
     projects: 'Projects',
     publications: 'Publications',
@@ -19,7 +18,7 @@ export const en = {
     role: 'Professor, College of Information and Electrical Engineering, China Agricultural University',
     intro:
       'I study human mobility, place, and the geography of cities and agricultural systems, using spatial data science, cartography, and explainable GeoAI.',
-    researchHeading: 'Research',
+    researchHeading: 'Research interests',
     researchIntro: 'Five themes, each colour-coded across papers and projects.',
     selectedPublications: 'Selected publications',
     featuredProjects: 'Research projects',
@@ -32,6 +31,37 @@ export const en = {
     positions: 'Positions',
     awards: 'Awards',
     service: 'Service & leadership',
+  },
+  publications: {
+    title: 'Publications',
+    intro: 'Peer-reviewed journal and conference papers.',
+    journal: 'Journal Articles',
+    conference: 'Conference Papers',
+    academic: 'Academic',
+    readPaper: 'Read paper',
+    kind: { abstract: 'Abstract', shortPaper: 'Short paper', preprint: 'Preprint' },
+  },
+  talks: {
+    title: 'Talks and presentations',
+    intro: 'Invited talks, seminars and conference presentations.',
+  },
+  teaching: {
+    title: 'Teaching',
+    intro: 'Courses taught at China Agricultural University, the University of Zurich, and the University of Maryland.',
+  },
+  people: {
+    title: 'People',
+    intro: 'Current group members and alumni.',
+    current: 'Current members',
+    alumni: 'Alumni',
+    phd: 'PhD students',
+    visitingPhd: 'Visiting PhD students',
+    master: 'Master students',
+  },
+  projects: {
+    title: 'Research projects',
+    intro: 'Funded research projects.',
+    empty: 'Project details are being added.',
   },
   footer: { rights: 'All rights reserved.' },
 };

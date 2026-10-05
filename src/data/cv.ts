@@ -34,12 +34,20 @@ export const cv = {
   ] satisfies CvEntry[],
   positions: [
     {
-      period: { en: '2021.11–present', zh: '2021.11–至今' },
+      period: { en: '2024.10–present', zh: '2024.10–至今' },
+      role: { en: 'Professor (Full)', zh: '教授' },
+      org: {
+        en: 'College of Information and Electrical Engineering, China Agricultural University',
+        zh: '中国农业大学信息与电气工程学院',
+      },
+    },
+    {
+      period: { en: '2021.11–2024.7', zh: '2021.11–2024.7' },
       role: { en: 'Group Leader of Urban Geoinformatics', zh: '城市地理信息学团队负责人' },
       org: { en: 'Department of Geography, University of Zurich', zh: '苏黎世大学地理系' },
     },
     {
-      period: { en: '2020.10–present', zh: '2020.10–至今' },
+      period: { en: '2020.10–2024.7', zh: '2020.10–2024.7' },
       role: { en: '"Oberassistent" (Lecturer/Senior Scientist)', zh: '“Oberassistent”（讲师/资深科学家）' },
       org: {
         en: 'Geographic Information Systems Unit, Department of Geography, University of Zurich',

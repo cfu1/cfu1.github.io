@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { site } from '../data/site';
+import { talks } from '../data/talks';
+import { useTranslations, type Lang } from '../i18n/utils';
+
+interface Props { lang: Lang; }
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+const sorted = [...talks].sort((a, b) => b.date.localeCompare(a.date));
+---
+<BaseLayout title={`${t('talks.title')} — ${site.name}`} description={t('talks.intro')}>
+  <div class="container page">
+    <h1>{t('talks.title')}</h1>
+    <p class="prose muted">{t('talks.intro')}</p>
+    <ul class="talk-list" role="list" style="margin-top:var(--space-5)">
+      {sorted.map((talk) => (
+        <li class="talk">
+          <div class="talk__date">{talk.date}</div>
+          <h3>{talk.title}</h3>
+          <p>{talk.type}, {talk.venue}{talk.location ? `, ${talk.location}` : ''}</p>
+          {talk.note && <p class="muted">{talk.note}</p>}
+        </li>
+      ))}
+    </ul>
+  </div>
+</BaseLayout>

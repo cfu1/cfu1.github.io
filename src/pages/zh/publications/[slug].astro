@@ -1,0 +1,10 @@
+---
+import PublicationDetail from '../../../components/PublicationDetail.astro';
+import { publications } from '../../../data/publications';
+
+export function getStaticPaths() {
+  return publications.map((pub) => ({ params: { slug: pub.slug }, props: { pub } }));
+}
+const { pub } = Astro.props;
+---
+<PublicationDetail lang="zh" pub={pub} />

@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { site } from '../data/site';
+import { useTranslations, type Lang } from '../i18n/utils';
+
+interface Props { lang: Lang; }
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+---
+<BaseLayout title={`${t('projects.title')} — ${site.name}`} description={t('projects.intro')}>
+  <div class="container page">
+    <h1>{t('projects.title')}</h1>
+    <p class="prose muted">{t('projects.intro')}</p>
+    <p class="placeholder">{t('projects.empty')}</p>
+  </div>
+</BaseLayout>

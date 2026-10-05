@@ -25,9 +25,13 @@
   --space-5: 2.5rem;
   --space-6: 4rem;
 
-  --theme-mobility-health: #3b5ba5;
-  --theme-generalization-geoai: #c0492f;
-  --theme-place-giscience: #7a4a6b;
-  --theme-urban-analytics: #c08a2e;
-  --theme-agri-environment: #5e7a3a;
+  --theme-mobility-health: #1a4fd6;
+  --theme-generalization-geoai: #e2231a;
+  --theme-place-giscience: #6a3fb5;
+  --theme-urban-analytics: #e08a00;
+  --theme-agri-environment: #1f8a4c;
+
+  --role-phd: #1a4fd6;
+  --role-master: #1f8a4c;
+  --role-visiting: #e08a00;
 }

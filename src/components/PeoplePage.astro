@@ -1,0 +1,64 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { site } from '../data/site';
+import { people, type Person } from '../data/people';
+import { useTranslations, type Lang } from '../i18n/utils';
+
+interface Props { lang: Lang; }
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+const current = people.filter((p) => p.status === 'current');
+const alumni = people.filter((p) => p.status === 'alumni');
+const roleColor = (g: Person['group']) =>
+  g === 'phd' ? 'var(--role-phd)' : g === 'visiting-phd' ? 'var(--role-visiting)' : 'var(--role-master)';
+const defs = [
+  { key: 'phd' as const, label: t('people.phd') },
+  { key: 'visiting-phd' as const, label: t('people.visitingPhd') },
+  { key: 'master' as const, label: t('people.master') },
+];
+const currentGroups = defs
+  .map((d) => ({ key: d.key, label: d.label, items: current.filter((p) => p.group === d.key) }))
+  .filter((d) => d.items.length > 0);
+const cohorts = [...new Set(alumni.map((p) => p.cohort ?? 0))].sort((a, b) => b - a);
+---
+<BaseLayout title={`${t('people.title')} — ${site.name}`} description={t('people.intro')}>
+  <div class="container page">
+    <h1>{t('people.title')}</h1>
+    <p class="prose muted">{t('people.intro')}</p>
+    <section class="section">
+      <h2>{t('people.current')}</h2>
+      {currentGroups.map((group) => (
+        <div class="people-group">
+          <h3 style={`color:${roleColor(group.key)}`}>{group.label}</h3>
+          <ul class="people-list" role="list">
+            {group.items.map((p) => (
+              <li class="person" style={`border-left-color:${roleColor(p.group)}`}>
+                <div class="person__name">{p.name} <span class="muted">({p.affiliation})</span></div>
+                {p.period && <div class="person__meta">{p.period}</div>}
+                {p.title && <div class="person__title">{p.title}{p.note ? ` (${p.note})` : ''}</div>}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </section>
+    <section class="section">
+      <h2>{t('people.alumni')}</h2>
+      {cohorts.map((year) => (
+        <div class="people-group">
+          <h3>{year}</h3>
+          <ul class="people-list" role="list">
+            {alumni.filter((p) => p.cohort === year).map((p) => (
+              <li class="person" style={`border-left-color:${roleColor(p.group)}`}>
+                <div class="person__name">{p.name} <span class="muted">({p.affiliation})</span></div>
+                {p.period && <div class="person__meta">{p.period}</div>}
+                {p.note && <div class="person__meta">{p.note}</div>}
+                {p.title && <div class="person__title">{p.title}</div>}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </section>
+  </div>
+</BaseLayout>

@@ -2,24 +2,52 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SectionHeader from './SectionHeader.astro';
 import { site } from '../data/site';
+import { home } from '../data/home';
 import { researchAreas } from '../data/researchAreas';
 import { useTranslations, type Lang } from '../i18n/utils';
 
 interface Props { lang: Lang; }
 const { lang } = Astro.props;
 const t = useTranslations(lang);
+const content = home[lang];
 const areas = [...researchAreas].sort((a, b) => a.order - b.order);
+const contacts = [
+  { label: 'Email', href: `mailto:${site.email}` },
+  { label: 'Google Scholar', href: site.links.scholar },
+  { label: 'ORCID', href: site.links.orcid },
+  { label: 'ResearchGate', href: site.links.researchgate },
+  { label: 'GitHub', href: site.links.github },
+  { label: 'LinkedIn', href: site.links.linkedin },
+];
 ---
-<BaseLayout title={`${site.name} — ${site.employer}`} description={t('home.intro')}>
+<BaseLayout title={`${site.name} — ${site.employer}`} description={content.bio[0]}>
   <section class="home-hero container">
-    <h1>{site.name}</h1>
-    <p class="home-hero__role">{t('home.role')}</p>
-    <p class="home-hero__intro">{t('home.intro')}</p>
+    <div class="home-hero__top">
+      <img class="home-hero__photo" src="/images/profile.jpg" alt={site.name} width="120" height="120" />
+      <div>
+        <h1>{site.name}</h1>
+        <p class="home-hero__role">{content.role}</p>
+      </div>
+    </div>
+    <div class="home-hero__grid">
+      <div class="home-hero__bio prose">
+        {content.bio.map((paragraph) => <p>{paragraph}</p>)}
+      </div>
+      <aside class="home-hero__aside">
+        <span class="label">{lang === 'zh' ? '联系方式' : 'Contact'}</span>
+        <ul class="contact-list" role="list">
+          {contacts.map((c) => (
+            <li><a href={c.href}>{c.label} ↗</a></li>
+          ))}
+        </ul>
+        <p class="muted home-hero__where">{site.location}<br />{site.employer}</p>
+      </aside>
+    </div>
   </section>
 
   <section class="home-section container" id="research">
     <SectionHeader number="01" title={t('home.researchHeading')} intro={t('home.researchIntro')} />
-    <ul class="research-list">
+    <ul class="research-list" role="list">
       {areas.map((area) => (
         <li class="research-item" style={`border-color:var(--theme-${area.id})`}>
           <span class="research-item__num">{String(area.order).padStart(2, '0')}</span>

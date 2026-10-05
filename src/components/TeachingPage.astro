@@ -1,0 +1,40 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { site } from '../data/site';
+import { teaching, type Teaching } from '../data/teaching';
+import { useTranslations, type Lang } from '../i18n/utils';
+
+interface Props { lang: Lang; }
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+const groups: { institution: string; department: string; items: Teaching[] }[] = [];
+for (const course of teaching) {
+  const group = groups.find((g) => g.institution === course.institution && g.department === course.department);
+  if (group) {
+    group.items.push(course);
+  } else {
+    groups.push({ institution: course.institution, department: course.department, items: [course] });
+  }
+}
+---
+<BaseLayout title={`${t('teaching.title')} — ${site.name}`} description={t('teaching.intro')}>
+  <div class="container page">
+    <h1>{t('teaching.title')}</h1>
+    <p class="prose muted">{t('teaching.intro')}</p>
+    {groups.map((group) => (
+      <section class="section">
+        <h2>{group.institution}</h2>
+        <p class="muted">{group.department}</p>
+        <ul class="teaching-list" role="list">
+          {group.items.map((course) => (
+            <li class="course">
+              <h3>{course.title}</h3>
+              <p class="course__meta">{course.type} · {course.period}</p>
+              {course.note && <p class="muted">{course.note}</p>}
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))}
+  </div>
+</BaseLayout>

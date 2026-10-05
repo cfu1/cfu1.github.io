@@ -10,12 +10,6 @@ const year = new Date().getFullYear();
 <footer class="site-footer">
   <div class="container site-footer__inner">
     <span>&copy; {year} {site.name}. {t('footer.rights')}</span>
-    <nav class="site-footer__links">
-      <a href={site.links.scholar}>Scholar</a>
-      <a href={site.links.orcid}>ORCID</a>
-      <a href={site.links.linkedin}>LinkedIn</a>
-      <a href={site.links.github}>GitHub</a>
-      <a href={`mailto:${site.email}`}>Email</a>
-    </nav>
+    <a href={`mailto:${site.email}`}>{site.email}</a>
   </div>
 </footer>
