@@ -286,8 +286,10 @@ interface Props {
 }
 const { paper, entry, lang } = Astro.props;
 const area = researchAreas.find((a) => a.id === paper.theme);
+const lightThemes = new Set(['urban-analytics']);
+const fg = lightThemes.has(paper.theme) ? '#111111' : '#ffffff';
 ---
-<figure class="gabstract" style={`--ga-color:var(--theme-${paper.theme})`}>
+<figure class="gabstract" style={`--ga-color:var(--theme-${paper.theme});--ga-fg:${fg}`}>
   <div class="gabstract__panel">
     <span class="gabstract__theme">{area?.label[lang] ?? ''}</span>
     <div class="gabstract__schematic"><Schematic id={entry.schematic} /></div>
@@ -306,7 +308,7 @@ const area = researchAreas.find((a) => a.id === paper.theme);
 
 ```css
 .gabstract { display: grid; grid-template-columns: minmax(180px, 30%) 1fr; border: 1px solid var(--rule); background: var(--bg); margin: 0 0 var(--space-5); }
-.gabstract__panel { background: var(--ga-color); color: #fff; padding: var(--space-4); display: flex; flex-direction: column; justify-content: space-between; gap: var(--space-4); min-height: 190px; }
+.gabstract__panel { background: var(--ga-color); color: var(--ga-fg); padding: var(--space-4); display: flex; flex-direction: column; justify-content: space-between; gap: var(--space-4); min-height: 190px; }
 .gabstract__theme { font-family: var(--font-mono); font-size: var(--step--1); letter-spacing: 0.12em; text-transform: uppercase; line-height: 1.5; }
 .gabstract__schematic { width: 100%; max-width: 150px; }
 .gabstract__body { padding: var(--space-4) var(--space-5); display: flex; flex-direction: column; gap: var(--space-4); }
@@ -369,7 +371,7 @@ Replace this block:
 with:
 
 ```astro
-    {area && (
+    {area && !ga && (
       <p>
         <span class="theme-tag" style={`color:var(--theme-${pub.theme})`}>{area.label[lang]}</span>
       </p>
