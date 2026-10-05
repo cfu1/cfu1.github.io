@@ -4,22 +4,26 @@ import { site } from '../data/site';
 import { publicationUrl, type Publication } from '../data/publications';
 import { researchAreas } from '../data/researchAreas';
 import { useTranslations, type Lang } from '../i18n/utils';
+import GraphicalAbstract from './GraphicalAbstract.astro';
+import { graphicalAbstracts } from '../data/graphicalAbstracts';
 
 interface Props { lang: Lang; pub: Publication; }
 const { lang, pub } = Astro.props;
 const t = useTranslations(lang);
 const area = researchAreas.find((a) => a.id === pub.theme);
+const ga = graphicalAbstracts[pub.slug];
 ---
 <BaseLayout title={`${pub.title} — ${site.name}`} description={pub.citation}>
   <div class="container page">
     <span class="theme-rule" style={`background:var(--theme-${pub.theme})`}></span>
     <h1>{pub.title}</h1>
     <p class="muted">{pub.venue}, {pub.year}</p>
-    {area && (
+    {area && !ga && (
       <p>
         <span class="theme-tag" style={`color:var(--theme-${pub.theme})`}>{area.label[lang]}</span>
       </p>
     )}
+    {ga && <GraphicalAbstract paper={pub} entry={ga} lang={lang} />}
     <hr class="rule" />
     <p class="prose">{pub.citation}</p>
     {publicationUrl(pub) && (
