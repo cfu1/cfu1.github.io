@@ -29,7 +29,13 @@
   --theme-generalization-geoai: #e2231a;
   --theme-place-giscience: #6a3fb5;
   --theme-urban-analytics: #e08a00;
-  --theme-agri-environment: #1f8a4c;
+  --theme-agri-environment: #1a7f45;
+
+  --theme-mobility-health-fg: #ffffff;
+  --theme-generalization-geoai-fg: #ffffff;
+  --theme-place-giscience-fg: #ffffff;
+  --theme-urban-analytics-fg: #111111;
+  --theme-agri-environment-fg: #ffffff;
 
   --role-phd: #1a4fd6;
   --role-master: #1f8a4c;

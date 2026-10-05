@@ -12,10 +12,8 @@ interface Props {
 }
 const { paper, entry, lang } = Astro.props;
 const area = researchAreas.find((a) => a.id === paper.theme);
-const lightThemes = new Set(['urban-analytics']);
-const fg = lightThemes.has(paper.theme) ? '#111111' : '#ffffff';
 ---
-<figure class="gabstract" style={`--ga-color:var(--theme-${paper.theme});--ga-fg:${fg}`}>
+<figure class="gabstract" style={`--ga-color:var(--theme-${paper.theme});--ga-fg:var(--theme-${paper.theme}-fg)`}>
   <div class="gabstract__panel">
     <span class="gabstract__theme">{area?.label[lang] ?? ''}</span>
     <div class="gabstract__schematic"><Schematic id={entry.schematic} /></div>
