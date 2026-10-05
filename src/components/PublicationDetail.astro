@@ -17,7 +17,7 @@ const ga = graphicalAbstracts[pub.slug];
   <div class="container page">
     <span class="theme-rule" style={`background:var(--theme-${pub.theme})`}></span>
     <h1>{pub.title}</h1>
-    <p class="muted">{pub.venue}, {pub.year}</p>
+    {!ga && <p class="muted">{pub.venue}, {pub.year}</p>}
     {area && !ga && (
       <p>
         <span class="theme-tag" style={`color:var(--theme-${pub.theme})`}>{area.label[lang]}</span>
